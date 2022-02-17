@@ -1,0 +1,78 @@
+body {
+    background-color: #eaeef9;
+}
+
+h1 {
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen {
+    width: 150px;
+}
+
+.frutasbox {
+    background: #ffffff;
+    width: 290px;
+    height: 350px;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+
+}
+
+h2 {
+    color: #302A47;
+    line-height: 0.5;
+}
+
+h5 {
+    color: #b9c2ce;
+    font-weight: lighter;
+    line-height: 0.2;
+}
+
+.imagenfrutasbox {
+    width: 200px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+ul {
+    list-style-image: url(/pics/check.png);
+}
+
+.verdurasbox {
+    background: #ffffff;
+    width: 290px;
+    height: 350px;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+.imagenverdurasbox {
+    width: 200px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.carnesbox {
+    background: #ffffff;
+    width: 290px;
+    height: 350px;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+.imagencarnesbox {
+    width: 200px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.listas {
+    display: flex;
+    justify-content: space-evenly;
+}   

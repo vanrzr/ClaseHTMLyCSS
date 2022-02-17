@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"> <!--sirve para indicar el lenguaje de la web y para que después se pueda traducir-->
+    <head>
+       <meta charset="UTF-8"> <!--ayuda a que se pueda leer caracteres en español como la ñ o tambien emojis-->
+       <meta name="description" content="Esta pagina te mostrará fotos de perros" /> <!--sirve para colocar la descripción en el navegador, ayuda al SEO-->
+       <meta name="robots" content="index,follow"> <!--sirve para ayudar a los robots de posicionamiento en los navegadores, con este meta autorizas-->
+       <title>Es mi página</title> <!--es el titulo que va en la pestaña de la web-->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport significa el tamaño de la pantalla, este meta sirve para que sea medio responsive-->
+       <link rel="stylesheet" href="./css/style.css"> <!--aca estamos linkeando el css al html-->
+    </head>
+    <body>
+       <!--etiquetas contenedoras son las que van a tener más etiquetas adentro de ellas, ayudan a generar la estructura de la pagina-->
+       <!--etiquetas de contenido: imagenes, texto, videos o cualquier cosa que se pueda renderizar en el proyecto-->
+       <header>
+           <nav></nav>
+       </header>
+       <main>
+           <h1>¡Soy la lista del super!</h1>
+        <section class="listas">
+           <section class="frutasbox">
+               <figure>
+                   <img class="imagenfrutasbox" src="./pics/frutas medium.jpg" alt="Imagen de limones cortados" >
+               </figure>
+               <h2>Frutas</h2>
+               <h5>Para el postre</h5>
+               <ul>
+                   <li>1 kg de manzanas</li>
+                   <li>2 kg de peras</li>
+                   <li>1 kg de limón</li>
+               </ul>
+           </section>
+
+           <section class="verdurasbox">
+               <figure>
+                   <img class="imagenverdurasbox" src="./pics/verduras medium.jpg" alt="Imagen de verduras variadas" >
+               </figure>
+               <h2>Verduras</h2>
+               <h5>Para la ensalada</h5>
+               <ul>
+                   <li>Lechuga</li>
+                   <li>Cebolla</li>
+                   <li>Apio</li>
+               </ul>
+           </section>
+
+           <section class="carnesbox">
+               <figure>
+                   <img class="imagencarnesbox" src="./pics/carnes medium.jpg" alt="Imagen de sushi">
+               </figure>
+                <h2>Carnes</h2>
+                <h5>Para los almuerzos</h5>
+                <ul>
+               <li>Pescado</li>
+               <li>Pollo</li>
+               <li>Chancho</li>
+                </ul>
+           </section>
+        </section>
+           <br>
+           <form>
+               <label for="nombre">
+                   <span>¿Quién va a ir a comprar?</span>
+                   <input type="text" name="nombre" id="nombre" autocomplete="name" required />
+               </label>
+                <label for="presupuesto">
+                    <span>¿Cuánto presupuesto tienes?</span>
+                    <input type="number" id="presupuesto" placeholder="Coloca el monto" required />
+                </label>
+                <label for="correo">
+                    <span>¿Cuál es tu correo?</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email" required />
+                </label>
+                <label for="pais">
+                    <span>¿En qué país vives?</span>
+                    <input type="text" name="pais" id="pais" autocomplete="country" required />
+                </label>
+                <label for="cp">
+                    <span>¿Cuál es tu código postal?</span>
+                    <input type="text" name="cp" id="cp" autocomplete="postal-code" required />
+                </label>
+                <input type="submit" />
+           </form>
+           <br>
+           <!-- <form action="">
+               <label for="hora">
+                   <span>Hora</span>
+                   <input type="time" id="hora" name="hora">
+               </label>
+               <label for="dia">
+                <span>Día</span>
+                <input type="date" id="dia" name="dia">
+            </label>
+            <label for="semana">
+                <span>Semana</span>
+                <input type="week" id="semana" name="semana">
+            </label>
+            <label for="mes">
+                <span>Mes</span>
+                <input type="month" id="mes" name="mes">
+            </label>
+            <input type="submit">
+           </form> -->
+           <form action="">
+               <label for="calendario">
+                   <span>¿Cuándo irás al mercado?</span>
+                   <input type="datetime-local" id="calendario" name="calendario" />
+               </label>
+               <input type="submit" />
+           </form>
+           <br>
+           <!-- <select name="mercados" id="">
+               <option value="Vivanda">Vivanda</option>
+               <option value="Wong">Wong</option>
+               <option value="Metro">Metro</option>
+           </select> -->
+           <input list="mercados" />
+           <datalist id="mercados">
+               <option value="Vivanda"></option>
+               <option value="Wong"></option>
+               <option value="Metro"></option>
+           </datalist>
+           <p>Creado por Vane</p>
+       </main>
+       <footer>
+
+       </footer>
+
+    </body>
+</html>
+
