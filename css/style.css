@@ -2,6 +2,20 @@ body {
     background-color: #eaeef9;
 }
 
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    background-color: white;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+}
+
 h1 {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
