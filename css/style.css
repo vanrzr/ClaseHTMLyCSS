@@ -2,91 +2,114 @@ body {
     background-color: #eaeef9;
 }
 
-.main-nav {
-    margin-top: 10px;
+.header-nav {
+    margin: 0px;
     list-style: none;
     background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
-.main-nav__item {
+.header-nav__item {
     display: inline-block;
+    word-spacing: 10px;
 }
 
-.main-nav__item a {
+.header-nav__item a {
     text-decoration: none;
 }
 
-h1 {
-    color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
+.lists {
+    display: flex;
+    justify-content: space-evenly;
 }
-
-.imagen {
-    width: 150px;
-}
-
-.frutasbox {
+.fruit-list__article {
     background: #ffffff;
     width: 290px;
-    height: 350px;
+    height: 320px;
     padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
-
+    margin-top: 40px;
 }
 
-h2 {
+.fruit-list__image {
+    width: 200px;
+}
+
+.fruit-list__title {
     color: #302A47;
-    line-height: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h5 {
-    color: #b9c2ce;
-    font-weight: lighter;
+.fruit-list__subtitle{
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
     line-height: 0.2;
 }
 
-.imagenfrutasbox {
-    width: 200px;
-    border-radius: 20px;
-    align-content: center;
+.fruit-list__list{
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
-    list-style-image: url(/pics/check.png);
-}
-
-.verdurasbox {
+.vegetables-list__article {
     background: #ffffff;
     width: 290px;
-    height: 350px;
+    height: 320px;
     padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
+    margin-top: 40px;
 }
 
-.imagenverdurasbox {
+.vegetables-list__image {
     width: 200px;
-    border-radius: 20px;
-    align-content: center;
 }
 
-.carnesbox {
+.vegetables-list__title {
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vegetables-list__subtitle{
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 0.2;
+}
+
+.vegetables-list__list{
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meat-list__article {
     background: #ffffff;
     width: 290px;
-    height: 350px;
+    height: 320px;
     padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
+    margin-top: 40px;
 }
 
-.imagencarnesbox {
+.meat-list__image {
     width: 200px;
-    border-radius: 20px;
-    align-content: center;
 }
 
-.listas {
-    display: flex;
-    justify-content: space-evenly;
-}   
+.meat-list__title {
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meat-list__subtitle{
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 0.2;
+}
+
+.meat-list__list{
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+}
