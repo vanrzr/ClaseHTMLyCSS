@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #eaeef9;
 }
@@ -13,24 +19,29 @@ body {
 
 .header-nav__item {
     display: inline-block;
-    word-spacing: 10px;
+    word-spacing: 30px;
 }
 
 .header-nav__item a {
     text-decoration: none;
 }
 
+.header-nav__item a:hover {
+    color: #e359ec;
+}
+
 .lists {
     display: flex;
     justify-content: space-evenly;
 }
+
 .fruit-list__article {
     background: #ffffff;
     width: 290px;
     height: 320px;
-    padding: 20px 20px;
     border-radius: 20px;
     margin-top: 40px;
+    padding: 20px 20px 20px 20px;
 }
 
 .fruit-list__image {
@@ -40,18 +51,20 @@ body {
 .fruit-list__title {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 30px;
 }
 
 .fruit-list__subtitle{
     color: dimgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9px;
-    line-height: 0.2;
 }
 
 .fruit-list__list{
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
 }
 
 .vegetables-list__article {
@@ -70,18 +83,20 @@ body {
 .vegetables-list__title {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 30px;
 }
 
 .vegetables-list__subtitle{
     color: dimgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9px;
-    line-height: 0.2;
 }
 
 .vegetables-list__list{
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
 }
 
 .meat-list__article {
@@ -100,6 +115,8 @@ body {
 .meat-list__title {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 30px;
 }
 
 .meat-list__subtitle{
@@ -112,4 +129,5 @@ body {
 .meat-list__list{
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
 }
