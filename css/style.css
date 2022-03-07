@@ -1,78 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
 body {
     background-color: #eaeef9;
 }
 
-h1 {
+.header-nav {
+    margin: 0px;
+    list-style: none;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__item {
+    display: inline-block;
+    word-spacing: 30px;
+}
+
+.header-nav__item a {
+    text-decoration: none;
+}
+
+.header-nav__item a:hover {
+    color: #e359ec;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fruit-list__article {
+    background: #ffffff;
+    width: 300px;
+    height: 310px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.fruit-list__image {
+    width: 230px;
+    position: relative;
+    bottom: 40px;
+    margin-left: 35px;
+    margin-bottom: -15px;
+    border-radius: 10px;
+}
+
+.fruit-list__title {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-left: 30px;
 }
 
-.imagen {
-    width: 150px;
+.fruit-list__subtitle{
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-left: 30px;
 }
 
-.frutasbox {
+.fruit-list__list {
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.tag-comida {
+    color: #ec5960;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #ffe0cc;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    left: 115px;
+    top: 20px;
+}
+
+.tag-mercado {
+    color: #06973e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #bafdd4;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+
+.vegetables-list__article {
     background: #ffffff;
     width: 290px;
-    height: 350px;
+    height: 320px;
     padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
-
+    margin-top: 40px;
 }
 
-h2 {
+.vegetables-list__image {
+    width: 200px;
+}
+
+.vegetables-list__title {
     color: #302A47;
-    line-height: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 3rem;
 }
 
-h5 {
-    color: #b9c2ce;
-    font-weight: lighter;
+.vegetables-list__subtitle{
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
     line-height: 0.2;
 }
 
-.imagenfrutasbox {
-    width: 200px;
-    border-radius: 20px;
-    align-content: center;
+.vegetables-list__list{
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-top: 10px;
 }
 
-ul {
-    list-style-image: url(/pics/check.png);
-}
-
-.verdurasbox {
+.meat-list__article {
     background: #ffffff;
     width: 290px;
-    height: 350px;
+    height: 320px;
     padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
+    margin-top: 40px;
 }
 
-.imagenverdurasbox {
+.meat-list__image {
     width: 200px;
-    border-radius: 20px;
-    align-content: center;
 }
 
-.carnesbox {
-    background: #ffffff;
-    width: 290px;
-    height: 350px;
-    padding: 20px 20px;
+.meat-list__title {
+    color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
+    line-height: 2;
+    font-size: 3rem;
 }
 
-.imagencarnesbox {
-    width: 200px;
-    border-radius: 20px;
-    align-content: center;
+.meat-list__subtitle{
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 0.2;
 }
 
-.listas {
-    display: flex;
-    justify-content: space-evenly;
-}   
+.meat-list__list{
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+}

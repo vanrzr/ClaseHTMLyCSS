@@ -12,118 +12,60 @@
        <!--etiquetas contenedoras son las que van a tener más etiquetas adentro de ellas, ayudan a generar la estructura de la pagina-->
        <!--etiquetas de contenido: imagenes, texto, videos o cualquier cosa que se pueda renderizar en el proyecto-->
        <header>
-           <nav></nav>
-       </header>
-       <main>
-           <h1>¡Soy la lista del super!</h1>
-        <section class="listas">
-           <section class="frutasbox">
-               <figure>
-                   <img class="imagenfrutasbox" src="./pics/frutas medium.jpg" alt="Imagen de limones cortados" >
-               </figure>
-               <h2>Fruta</h2>
-               <h5>Para el postre</h5>
-               <ul>
-                   <li>1 kg de manzanas</li>
-                   <li>2 kg de peras</li>
-                   <li>1 kg de limón</li>
-               </ul>
-           </section>
-
-           <section class="verdurasbox">
-               <figure>
-                   <img class="imagenverdurasbox" src="./pics/verduras medium.jpg" alt="Imagen de verduras variadas" >
-               </figure>
-               <h2>Verduras</h2>
-               <h5>Para la ensalada</h5>
-               <ul>
-                   <li>Lechuga</li>
-                   <li>Cebolla</li>
-                   <li>Apio</li>
-               </ul>
-           </section>
-
-           <section class="carnesbox">
-               <figure>
-                   <img class="imagencarnesbox" src="./pics/carnes medium.jpg" alt="Imagen de sushi">
-               </figure>
-                <h2>Carnes</h2>
-                <h5>Para los almuerzos</h5>
-                <ul>
-               <li>Pescado</li>
-               <li>Pollo</li>
-               <li>Chancho</li>
+            <nav>
+                <ul class="header-nav">
+                    <li class="header-nav__item"><a href="">Home</a></li>
+                    <li class="header-nav__item"><a href="">Listas</a></li>
+                    <li class="header-nav__item"><a href="">Perfiles</a></li>
+                    <li class="header-nav__item"><a href="">Blog</a></li>
                 </ul>
-           </section>
-        </section>
-           <br>
-           <form>
-               <label for="nombre">
-                   <span>¿Quién va a ir a comprar?</span>
-                   <input type="text" name="nombre" id="nombre" autocomplete="name" required />
-               </label>
-                <label for="presupuesto">
-                    <span>¿Cuánto presupuesto tienes?</span>
-                    <input type="number" id="presupuesto" placeholder="Coloca el monto" required />
-                </label>
-                <label for="correo">
-                    <span>¿Cuál es tu correo?</span>
-                    <input type="email" name="correo" id="correo" autocomplete="email" required />
-                </label>
-                <label for="pais">
-                    <span>¿En qué país vives?</span>
-                    <input type="text" name="pais" id="pais" autocomplete="country" required />
-                </label>
-                <label for="cp">
-                    <span>¿Cuál es tu código postal?</span>
-                    <input type="text" name="cp" id="cp" autocomplete="postal-code" required />
-                </label>
-                <input type="submit" />
-           </form>
-           <br>
-           <!-- <form action="">
-               <label for="hora">
-                   <span>Hora</span>
-                   <input type="time" id="hora" name="hora">
-               </label>
-               <label for="dia">
-                <span>Día</span>
-                <input type="date" id="dia" name="dia">
-            </label>
-            <label for="semana">
-                <span>Semana</span>
-                <input type="week" id="semana" name="semana">
-            </label>
-            <label for="mes">
-                <span>Mes</span>
-                <input type="month" id="mes" name="mes">
-            </label>
-            <input type="submit">
-           </form> -->
-           <form action="">
-               <label for="calendario">
-                   <span>¿Cuándo irás al mercado?</span>
-                   <input type="datetime-local" id="calendario" name="calendario" />
-               </label>
-               <input type="submit" />
-           </form>
-           <br>
-           <!-- <select name="mercados" id="">
-               <option value="Vivanda">Vivanda</option>
-               <option value="Wong">Wong</option>
-               <option value="Metro">Metro</option>
-           </select> -->
-           <input list="mercados" />
-           <datalist id="mercados">
-               <option value="Vivanda"></option>
-               <option value="Wong"></option>
-               <option value="Metro"></option>
-           </datalist>
-           <p>Creado por Vane</p>
-       </main>
-       <footer>
+            </nav>
+        </header>
 
-       </footer>
+        <main>
+            <section class="lists">
+                <article class="fruit-list__article">
+                  <figure class="fruit-list__figure">
+                    <img src="./pics/frutas medium.jpg" alt="Imagen de limones" class="fruit-list__image">
+                  </figure>
+                  <h2 class="fruit-list__title">Frutas</h2>
+                  <h3 class="fruit-list__subtitle">para los jugos</h3>
+                  <ul class="fruit-list__list">
+                      <li class="fruit-list__item">2 kg de arándanos</li>
+                      <li class="fruit_list__item">1 kg de limón</li>
+                      <li class="fruit-list__item">2 kg de aguaymanto</li>
+                  </ul>
+                  <p class="tag-comida">&#10003; Comida</p>
+                  <p class="tag-mercado">&#10003; Mercado</p>
+                </article>
+                <article class="vegetables-list__article">
+                    <figure class="vegetables-list__figure">
+                      <img src="./pics/verduras medium.jpg" alt="Imagen de verduras variados" class="vegetables-list__image">
+                    </figure>
+                    <h2 class="vegetables-list__title">Verduras</h2>
+                    <h3 class="vegetables-list__subtitle">para las ensaladas</h3>
+                    <ul class="vegetables-list__list">
+                        <li class="vegetables-list__item">2 kg de zanahoria</li>
+                        <li class="vegetables_list__item">1 lechuga</li>
+                        <li class="vegetables-list__item">3 espinacas</li>
+                    </ul>
+                  </article>
+                  <article class="meat-list__article">
+                    <figure class="meat-list__figure">
+                      <img src="./pics/carnes medium.jpg" alt="Imagen de sushi" class="meat-list__image">
+                    </figure>
+                    <h2 class="meat-list__title">Carnes</h2>
+                    <h3 class="meat-list__subtitle">para los almuerzos</h3>
+                    <ul class="meat-list__list">
+                        <li class="meat-list__item">2 kg de pollo</li>
+                        <li class="meat_list__item">3 kg de pescado</li>
+                        <li class="meat-list__item">1 kg de hígado</li>
+                    </ul>
+                  </article>
+            </section>
+        </main>
+
+        <footer></footer>
 
     </body>
 </html>
