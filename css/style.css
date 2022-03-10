@@ -12,76 +12,114 @@ body {
     background-color: #eaeef9;
 }
 
-.header-nav {
-    margin: 0px;
-    list-style: none;
-    background-color: white;
-    height: 50px;
-    display: flex;
-    align-items: center;
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(244, 245, 252);
+    overflow-x: hidden;
 }
-
-.header-nav__item {
-    display: inline-block;
-    word-spacing: 30px;
-}
-
-.header-nav__item a {
+  
+.sidenav a {
+    color: #302A47;
+    padding: 16px;
     text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.sidenav a:hover {
+    background-color: #ccd9f3;
+    color: black;
 }
 
-.header-nav__item a:hover {
-    color: #e359ec;
+main {
+    margin-left: 200px;
+    height: 100%;
+    padding: 40px 40px 80px 40px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: #302A47;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    background-image: url(searchicon.png);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 40px;
+    transition: width 0.4s ease-in-out;
+    margin-top: 10px;
+}
+  
+input[type=text]:focus {
+    width: 100%;
 }
 
 .lists {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.fruit-list__article {
+.fruit-list__article, .plants-list__article, .dishwashing-list__article, .nymeria-list__article, .ventanas-list__article, .negrito-list__article {
     background: #ffffff;
-    width: 300px;
-    height: 310px;
+    width: 280px;
+    height: 290px;
     border-radius: 20px;
     margin-top: 80px;
+    margin-bottom: 40px;
 }
 
-.fruit-list__image {
-    width: 230px;
+.fruit-list__image, .plants-list__image, .dishwashing-list__image, .nymeria-list__image, .ventanas-list__image, .negrito-list__image {
+    width: 220px;
     position: relative;
     bottom: 40px;
-    margin-left: 35px;
+    margin-left: 30px;
     margin-bottom: -15px;
     border-radius: 10px;
 }
 
-.fruit-list__title {
+.fruit-list__title, .plants-list__title, .dishwashing-list__title, .nymeria-list__title, .ventanas-list__title, .negrito-list__title {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 30px;
 }
 
-.fruit-list__subtitle{
+.fruit-list__subtitle, .plants-list__subtitle, .dishwashing-list__subtitle, .nymeria-list__subtitle, .ventanas-list__subtitle, .negrito-list__subtitle {
     color: dimgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     margin-top: 8px;
     margin-left: 30px;
+    letter-spacing: 0.3rem;
 }
 
-.fruit-list__list {
+.fruit-list__list, .plants-list__list, .dishwashing-list__list, .nymeria-list__list, .ventanas-list__list, .negrito-list__list {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     padding: 10px 20px;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
+    list-style: none;
 }
 
-.tag-comida {
+.tag-food {
     color: #ec5960;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -94,7 +132,33 @@ body {
     top: 20px;
 }
 
-.tag-mercado {
+.tag-shopping {
+    color: #2e54fa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #cae3ff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+
+.tag-home {
+    color: #6648eb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #e2daff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    left: 115px;
+    top: 20px;
+}
+
+.tag-plantas {
     color: #06973e;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -107,75 +171,28 @@ body {
     top: 20px;
 }
 
-.vegetables-list__article {
-    background: #ffffff;
-    width: 290px;
-    height: 320px;
-    padding: 20px 20px;
-    border-radius: 20px;
-    margin-top: 40px;
-}
-
-.vegetables-list__image {
-    width: 200px;
-}
-
-.vegetables-list__title {
-    color: #302A47;
+.tag-cleaning {
+    color: #e936cb;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2;
-    font-size: 3rem;
+    font-size: 1.2rem;
+    background-color: #ffe4fa;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    left: 120px;
+    top: 20px;
 }
 
-.vegetables-list__subtitle{
-    color: dimgrey;
+.tag-pets {
+    color: #c99b1e;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    line-height: 0.2;
-}
-
-.vegetables-list__list{
-    color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    margin-top: 10px;
-}
-
-.meat-list__article {
-    background: #ffffff;
-    width: 290px;
-    height: 320px;
-    padding: 20px 20px;
-    border-radius: 20px;
-    margin-top: 40px;
-}
-
-.meat-list__image {
-    width: 200px;
-}
-
-.meat-list__title {
-    color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2;
-    font-size: 3rem;
-}
-
-.meat-list__subtitle{
-    color: dimgrey;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 0.2;
-}
-
-.meat-list__list{
-    color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    margin-top: 10px;
-    
+    font-size: 1.2rem;
+    background-color: #faf1c7;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    left: 120px;
+    top: 20px;
 }

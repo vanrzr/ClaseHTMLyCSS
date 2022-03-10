@@ -12,56 +12,104 @@
        <!--etiquetas contenedoras son las que van a tener más etiquetas adentro de ellas, ayudan a generar la estructura de la pagina-->
        <!--etiquetas de contenido: imagenes, texto, videos o cualquier cosa que se pueda renderizar en el proyecto-->
        <header>
-            <nav>
-                <ul class="header-nav">
-                    <li class="header-nav__item"><a href="">Home</a></li>
-                    <li class="header-nav__item"><a href="">Listas</a></li>
-                    <li class="header-nav__item"><a href="">Perfiles</a></li>
-                    <li class="header-nav__item"><a href="">Blog</a></li>
-                </ul>
+            <nav class="sidenav">
+                <a href="#">Home</a>
+                <a href="#">Listas</a>
+                <a href="#">Perfiles</a>
+                <a href="#">Blog</a>
             </nav>
         </header>
-
         <main>
+            <h1>Listas</h1>
+            <form>
+              <input type="text" name="search" placeholder="Busca tu lista">
+            </form>
+            <section class="filters">
+              <button type="button">Casa</button>
+            </section>
             <section class="lists">
                 <article class="fruit-list__article">
                   <figure class="fruit-list__figure">
                     <img src="./pics/frutas medium.jpg" alt="Imagen de limones" class="fruit-list__image">
                   </figure>
-                  <h2 class="fruit-list__title">Frutas</h2>
+                  <h2 class="fruit-list__title">Comprar frutas</h2>
                   <h3 class="fruit-list__subtitle">para los jugos</h3>
                   <ul class="fruit-list__list">
-                      <li class="fruit-list__item">2 kg de arándanos</li>
-                      <li class="fruit_list__item">1 kg de limón</li>
-                      <li class="fruit-list__item">2 kg de aguaymanto</li>
+                      <li class="fruit-list__item"><input type="checkbox"> 2 kg de arándanos</li>
+                      <li class="fruit_list__item"><input type="checkbox"> 1 kg de limón</li>
+                      <li class="fruit-list__item"><input type="checkbox"> 2 kg de aguaymanto</li>
                   </ul>
-                  <p class="tag-comida">&#10003; Comida</p>
-                  <p class="tag-mercado">&#10003; Mercado</p>
+                  <p class="tag-food">&#10003; Comida</p>
+                  <p class="tag-shopping">&#10003; Compras</p>
                 </article>
-                <article class="vegetables-list__article">
-                    <figure class="vegetables-list__figure">
-                      <img src="./pics/verduras medium.jpg" alt="Imagen de verduras variados" class="vegetables-list__image">
-                    </figure>
-                    <h2 class="vegetables-list__title">Verduras</h2>
-                    <h3 class="vegetables-list__subtitle">para las ensaladas</h3>
-                    <ul class="vegetables-list__list">
-                        <li class="vegetables-list__item">2 kg de zanahoria</li>
-                        <li class="vegetables_list__item">1 lechuga</li>
-                        <li class="vegetables-list__item">3 espinacas</li>
-                    </ul>
-                  </article>
-                  <article class="meat-list__article">
-                    <figure class="meat-list__figure">
-                      <img src="./pics/carnes medium.jpg" alt="Imagen de sushi" class="meat-list__image">
-                    </figure>
-                    <h2 class="meat-list__title">Carnes</h2>
-                    <h3 class="meat-list__subtitle">para los almuerzos</h3>
-                    <ul class="meat-list__list">
-                        <li class="meat-list__item">2 kg de pollo</li>
-                        <li class="meat_list__item">3 kg de pescado</li>
-                        <li class="meat-list__item">1 kg de hígado</li>
-                    </ul>
-                  </article>
+                <article class="plants-list__article">
+                  <figure class="plants-list__figure">
+                    <img src="./pics/plantas.jpg" alt="Imagen de plantas" class="plants-list__image">
+                  </figure>
+                  <h2 class="plants-list__title">Regar plantas</h2>
+                  <h3 class="plants-list__subtitle">de la terraza</h3>
+                  <ul class="plants-list__list">
+                      <li class="plants-list__item"><input type="checkbox"> Aglaonema</li>
+                      <li class="plants_list__item"><input type="checkbox"> Rosa China</li>
+                      <li class="plants-list__item"><input type="checkbox"> Photus Marble Queen</li>
+                  </ul>
+                  <p class="tag-home">&#10003; Casa</p>
+                  <p class="tag-plantas">&#10003; Plantas</p>
+                </article>
+              </article>
+              <article class="dishwashing-list__article">
+                <figure class="dishwashing-list__figure">
+                  <img src="./pics/esponjas.jpg" alt="Imagen de esponjas" class="dishwashing-list__image">
+                </figure>
+                <h2 class="dishwashing-list__title">Lavar platos</h2>
+                <h3 class="dishwashing-list__subtitle">después de cada comida</h3>
+                <ul class="dishwashing-list__list">
+                    <li class="dishwashing-list__item"><input type="checkbox"> Desayuno</li>
+                    <li class="dishwashing_list__item"><input type="checkbox"> Almuerzo</li>
+                    <li class="dishwashing-list__item"><input type="checkbox"> Fines de Semana</li>
+                </ul>
+                <p class="tag-home">&#10003; Casa</p>
+                <p class="tag-cleaning">&#10003; Limpieza</p>
+              </article>
+              <article class="nymeria-list__article">
+                <figure class="nymeria-list__figure">
+                  <img src="./pics/perro rosado.jpg" alt="Imagen de un globo en forma de perro" class="nymeria-list__image">
+                </figure>
+                <h2 class="nymeria-list__title">Nymeria</h2>
+                <h3 class="nymeria-list__subtitle">la gordichanchi</h3>
+                <ul class="nymeria-list__list">
+                    <li class="nymeria-list__item"><input type="checkbox"> Croquetas mañana</li>
+                    <li class="nymeria_list__item"><input type="checkbox"> Croquetas noche</li>
+                    <li class="nymeria-list__item"><input type="checkbox"> Pasear</li>
+                </ul>
+                <p class="tag-pets">&#10003; Mascotas</p>
+              </article>
+              <article class="ventanas-list__article">
+                <figure class="ventanas-list__figure">
+                  <img src="./pics/ventanas.jpg" alt="Imagen de coso de limpieza" class="ventanas-list__image">
+                </figure>
+                <h2 class="ventanas-list__title">Limpiar ventanas</h2>
+                <h3 class="ventanas-list__subtitle">Mamparas también</h3>
+                <ul class="ventanas-list__list">
+                    <li class="ventanas-list__item"><input type="checkbox"> Primer piso</li>
+                    <li class="ventanas_list__item"><input type="checkbox"> Segundo piso</li>
+                    <li class="ventanas-list__item"><input type="checkbox"> Tercer piso</li>
+                </ul>
+                <p class="tag-home">&#10003; Casa</p>
+              </article>
+              <article class="negrito-list__article">
+                <figure class="negrito-list__figure">
+                  <img src="./pics/perro rojo.jpg" alt="Imagen de globo en forma de perro" class="negrito-list__image">
+                </figure>
+                <h2 class="negrito-list__title">Negrito</h2>
+                <h3 class="negrito-list__subtitle">Patas largas</h3>
+                <ul class="negrito-list__list">
+                    <li class="negrito-list__item"><input type="checkbox"> Croquetas mañana</li>
+                    <li class="negrito_list__item"><input type="checkbox"> Croquetas noche</li>
+                    <li class="negrito-list__item"><input type="checkbox"> Pasear</li>
+                </ul>
+                <p class="tag-pets">&#10003; Mascotas</p>
+              </article>
             </section>
         </main>
 
