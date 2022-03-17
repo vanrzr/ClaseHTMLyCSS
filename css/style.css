@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(244, 245, 252);
+    background-color: #f4f5fc;
     overflow-x: hidden;
 }
   
@@ -68,110 +69,151 @@ input[type=text]:focus {
     width: 100%;
 }
 
-.lists {
+ol {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-.fruit-list__article, .plants-list__article, .dishwashing-list__article, .nymeria-list__article, .ventanas-list__article, .negrito-list__article {
+.list__container {
     background: #ffffff;
-    width: 280px;
-    height: 290px;
+    width: 286px;
+    height: auto;
     border-radius: 20px;
     margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
 
-.fruit-list__image, .plants-list__image, .dishwashing-list__image, .nymeria-list__image, .ventanas-list__image, .negrito-list__image {
-    width: 220px;
+.list__image {
+    width: 286px;
+    height: 77px;
     position: relative;
     bottom: 40px;
-    margin-left: 30px;
-    margin-bottom: -15px;
-    border-radius: 10px;
+    margin-bottom: -20px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.fruit-list__title, .plants-list__title, .dishwashing-list__title, .nymeria-list__title, .ventanas-list__title, .negrito-list__title {
+.list__title {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     margin-left: 30px;
 }
 
-.fruit-list__subtitle, .plants-list__subtitle, .dishwashing-list__subtitle, .nymeria-list__subtitle, .ventanas-list__subtitle, .negrito-list__subtitle {
-    color: dimgrey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-top: 8px;
-    margin-left: 30px;
-    letter-spacing: 0.3rem;
-}
-
-.fruit-list__list, .plants-list__list, .dishwashing-list__list, .nymeria-list__list, .ventanas-list__list, .negrito-list__list {
+.list__list {
     color: #302A47;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     padding: 10px 20px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px 0px 15px 15px;
     list-style: none;
 }
 
-.tag-food {
+hr {
+    border: 0.5px solid #ccd9f3;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 237px;
+    margin-left: 24px;
+    margin-top: 12px;
+    padding-bottom: 16px;
+}
+.box {
+    height: 28px;
+    width: 28px;
+}
+.box1 {
+    background-color: transparent;
+    color: rgb(136, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    align-items: center;
+}
+p {
+    margin-top: 12px;
+}
+.box2 {
+    background-color: transparent;
+    border: 0.1rem solid #b4b4b4;
+    border-radius: 50%;
+}
+
+/* .fruit-list__schedule {
+    color: rgb(136, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 30px;
+    letter-spacing: 0.2rem;
+}
+.list__checkmark {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+} */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 286px;
+    height: 30.4px;
+}
+
+.users__icon {
+    width: 28px;
+    height: 28px;
+}
+
+.categories__food {
     color: #ec5960;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #ffe0cc;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 3px;
     position: relative;
-    left: 115px;
-    top: 20px;
+    top: 4px;
+    text-decoration: none;
+    margin-right: 3px;
 }
 
-.tag-shopping {
-    color: #2e54fa;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    background-color: #cae3ff;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 3px;
-    position: relative;
-    left: 120px;
-    top: 20px;
-}
-
-.tag-home {
+.categories__shopping {
     color: #6648eb;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #e2daff;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 3px;
     position: relative;
-    left: 115px;
-    top: 20px;
+    top: 4px;
+    text-decoration: none;
 }
 
-.tag-plantas {
+.categories__plants {
     color: #06973e;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #bafdd4;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 3px;
     position: relative;
-    left: 120px;
-    top: 20px;
+    top: 4px;
+    text-decoration: none;
 }
 
-.tag-cleaning {
+.categories__cleaning {
     color: #e936cb;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -180,11 +222,11 @@ input[type=text]:focus {
     padding: 5px 10px;
     border-radius: 3px;
     position: relative;
-    left: 120px;
-    top: 20px;
+    top: 4px;
+    text-decoration: none;
 }
 
-.tag-pets {
+.categories__pets {
     color: #c99b1e;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -193,6 +235,6 @@ input[type=text]:focus {
     padding: 5px 10px;
     border-radius: 3px;
     position: relative;
-    left: 120px;
-    top: 20px;
+    top: 4px;
+    text-decoration: none;
 }
