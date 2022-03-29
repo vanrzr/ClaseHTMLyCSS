@@ -13,60 +13,167 @@ body {
     background-color: #eaeef9;
 }
 
-.sidenav {
+header {
     height: 100%;
     width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #f4f5fc;
-    overflow-x: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-  
+.logo {
+    height: 50px;
+    font-size: 2rem;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 16px;
+    color: #272F74;
+}
+.sidebar {
+    left: 0;
+    display: flex;
+
+}
+.sidenav {
+    align-items: flex-start;
+}
 .sidenav a {
-    color: #302A47;
-    padding: 16px;
+    color: #272F74;
+    padding: 14px;
+    width: 200px;
     text-decoration: none;
     display: block;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
 }
   
 .sidenav a:hover {
-    background-color: #ccd9f3;
-    color: black;
+    background-color: #eaeef9;
+    color:#272F74;
 }
 
 main {
     margin-left: 200px;
     height: 100%;
-    padding: 40px 40px 80px 40px;
+    padding: 30px 40px 80px 40px;
 }
 
 h1 {
-    font-size: 3.2rem;
-    color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    color: #272F74;
+    margin-top: 40px;
+    margin-bottom: 45px;
 }
 
 input[type=text] {
     width: 200px;
     box-sizing: border-box;
-    border: 1px solid #b4b4b4;
+    border: 0px transparent;
     border-radius: 4px;
-    font-size: 1.4rem;
-    background-color: transparent;
-    background-image: url(searchicon.png);
+    color: #8B8B8B;
+    font-size: 1.2rem;
+    background-color: white;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 6px 10px 6px 40px;
     transition: width 0.4s ease-in-out;
-    margin-top: 10px;
 }
   
 input[type=text]:focus {
     width: 100%;
+    border: 0px transparent;
+}
+
+.home-icon {
+    width: 15px;
+    height: 15px;
+}
+.filters {
+    margin-top: 20px;
+}
+
+.filters__title {
+    color: #8B8B8B;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.filters__shopping {
+    color: #6648eb;
+    font-size: 1.2rem;
+    background-color: #eaeef9;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.1rem solid #6648eb;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-top: 7px;
+}
+
+.filters__food {
+    color: #ec5960;
+    font-size: 1.2rem;
+    background-color: #eaeef9;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.1rem solid #ec5960;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-top: 7px;
+}
+
+.filters__plants {
+    color: #06973e;
+    font-size: 1.2rem;
+    background-color: #eaeef9;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.1rem solid #06973e;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-top: 7px;
+}
+
+.filters__cleaning {
+    color: #e936cb;
+    font-size: 1.2rem;
+    background-color: #eaeef9;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.1rem solid #e936cb;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-top: 7px; 
+}
+
+.filters__pets {
+    color: #c99b1e;
+    font-size: 1.2rem;
+    background-color: #eaeef9;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.1rem solid #c99b1e;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-top: 7px; 
 }
 
 ol {
@@ -95,19 +202,18 @@ ol {
 }
 
 .list__title {
-    color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
+    color: #272F74;
+    font-size: 2.2rem;
     margin-left: 30px;
 }
 
 .list__list {
     color: #302A47;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     padding: 10px 20px;
-    margin: 10px 0px 15px 15px;
+    margin: 5px 0px 15px 15px;
     list-style: none;
+    line-height: 2.5rem;
 }
 
 hr {
@@ -129,15 +235,13 @@ hr {
 .box1 {
     background-color: transparent;
     color: rgb(136, 136, 136);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: lighter;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     align-items: center;
 }
 p {
-    margin-top: 12px;
+    margin-top: 8px;
 }
 .box2 {
     background-color: transparent;
@@ -173,68 +277,68 @@ p {
     height: 28px;
 }
 
-.categories__food {
+.categories__food, .filters__food:hover {
     color: #ec5960;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #ffe0cc;
     display: inline-block;
-    padding: 6px 10px;
+    padding: 5px 10px;
+    border: 0px transparent;
     border-radius: 3px;
     position: relative;
     top: 4px;
     text-decoration: none;
-    margin-right: 3px;
 }
 
-.categories__shopping {
+.categories__shopping, .filters__shopping:hover {
     color: #6648eb;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #e2daff;
     display: inline-block;
-    padding: 6px 10px;
+    padding: 5px 10px;
+    border: 0px transparent;
     border-radius: 3px;
     position: relative;
     top: 4px;
     text-decoration: none;
 }
 
-.categories__plants {
+.categories__plants, .filters__plants:hover {
     color: #06973e;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #bafdd4;
     display: inline-block;
-    padding: 6px 10px;
+    padding: 5px 10px;
+    border: 0px transparent;
     border-radius: 3px;
     position: relative;
     top: 4px;
     text-decoration: none;
 }
 
-.categories__cleaning {
+.categories__cleaning, .filters__cleaning:hover {
     color: #e936cb;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #ffe4fa;
     display: inline-block;
     padding: 5px 10px;
+    border: 0px transparent;
     border-radius: 3px;
     position: relative;
     top: 4px;
     text-decoration: none;
 }
 
-.categories__pets {
+.categories__pets, .filters__pets:hover {
     color: #c99b1e;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     background-color: #faf1c7;
     display: inline-block;
     padding: 5px 10px;
+    border: 0px transparent;
     border-radius: 3px;
     position: relative;
     top: 4px;
     text-decoration: none;
 }
+

@@ -10,27 +10,54 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/76879a0ded.js" crossorigin="anonymous"></script>
     </head>
     <body>
        <!--etiquetas contenedoras son las que van a tener más etiquetas adentro de ellas, ayudan a generar la estructura de la pagina-->
        <!--etiquetas de contenido: imagenes, texto, videos o cualquier cosa que se pueda renderizar en el proyecto-->
        <header>
-            <nav class="sidenav">
-                <a href="#">Home</a>
-                <a href="#">Listas</a>
-                <a href="#">Perfiles</a>
-                <a href="#">Blog</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Listas</h1>
+        <div class="logo">
+          Proyecto casita
+        </div>
+        <div class="sidebar">
+          <nav class="sidenav">
+            <a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Home</a>
+            <a href="#"><i class="fa-solid fa-list-ul"></i>&nbsp;&nbsp;&nbsp;Listas</a>
+            <a href="#"><i class="fa-solid fa-vector-square"></i>&nbsp;&nbsp;&nbsp;Proyectos</a>
+            <a href="#"><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;&nbsp;Calendario</a>
+            <a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Perfiles</a>
+            <a href="#"><i class="fa-brands fa-microblog"></i>&nbsp;&nbsp;&nbsp;Blog</a>
+          </nav>
+        </div>
+       </header>
+       <main>
+          <section class="subnav">
             <form>
-              <input type="text" name="search" placeholder="Busca tu lista">
+              <input type="text" name="search" placeholder="Buscar...">
             </form>
-            <section class="filters">
-              <button type="button">Casa</button>
-            </section>
-            <section class="main__lists">
+            <h1>Listas de cosas por hacer</h1>
+            <div class="filters">
+              <span class="filters__title">Refina tu busqueda</span>
+              <ol>
+                <li class="filters__list-items">
+                  <a class="filters__shopping" title="compras" href="#">Compras</a>
+                </li>
+                <li class="filters__list-items">
+                  <a class="filters__food" title="comida" href="#">Comida</a>
+                </li>
+                <li class="filters__list-items">
+                  <a class="filters__plants" title="plantas" href="#">Plantas</a>
+                </li>
+                <li class="filters__list-items">
+                  <a class="filters__cleaning" title="Limpiar" href="#">Limpiar</a>
+                </li>
+                <li class="filters__list-items">
+                  <a class="filters__pets" title="Mascotas" href="#">Mascotas</a>
+                </li>
+              </ol>
+            </div>
+          </section>
+          <section class="main__lists">
               <ol class="lists">
                 <li class="fruit-list">
                   <div class="list__container">
@@ -119,7 +146,7 @@
                     <div class="bottom__users">
                       <a class="users__icon" href="#">
                         <img src="./pics/user-icon_frida.png" class="users__icon">
-                        <img src="./pics/user-icon_vincent.png" class="users__icon">
+                        <img src="./pics/user-icon_van.png" class="users__icon">
                       </a>
                     </div>
                     <div class="bottom__categories">
@@ -181,8 +208,7 @@
                   <div class="bottom">
                     <div class="bottom__users">
                       <a class="users__icon" href="#">
-                        <img src="./pics/user-icon_frida.png" class="users__icon">
-                        <img src="./pics/user-icon_vincent.png" class="users__icon">
+                        <img src="./pics/user-icon_van.png" class="users__icon">
                       </a>
                     </div>
                     <div class="bottom__categories">
@@ -212,7 +238,6 @@
                   <div class="bottom">
                     <div class="bottom__users">
                       <a class="users__icon" href="#">
-                        <img src="./pics/user-icon_frida.png" class="users__icon">
                         <img src="./pics/user-icon_vincent.png" class="users__icon">
                       </a>
                     </div>
@@ -232,7 +257,7 @@
                       <li class="meat_list__list-item"><input type="checkbox"> 2 kg de carne de res</li>
                       <li class="meat_list__list-item"><input type="checkbox"> 2 pechugas de pollo</li>
                       <li class="meat_list__list-item"><input type="checkbox"> 3 kg de bonito</li>
-                      <li class="meat_list__list-item"><input type="checkbox"> 1/" kg de pejerrery</li>
+                      <li class="meat_list__list-item"><input type="checkbox"> 1/2 kg de pejerrey</li>
                     </ul>
                     <hr>
                     <div class="container">
@@ -256,11 +281,10 @@
                   </div>
                 </li>
               </ol>
-            </section>
-        </main>
+          </section>
+       </main>
 
-        <footer></footer>
-
+       <footer></footer>
     </body>
 </html>
 
